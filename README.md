@@ -1,31 +1,31 @@
 # K-NN Image Recognition (Face Dataset)
 
-Acest proiect implementează un algoritm **K-Nearest Neighbors (K-NN)** aplicat pe un set de imagini `.pgm`, folosit pentru recunoaștere facială. Se folosește o metrică de distanță (normă) pentru a găsi cei mai apropiați vecini față de o imagine dată și se face predicția clasei (persoanei).
+This project implements a **K-Nearest Neighbors (K-NN)** algorithm applied to a `.pgm` image dataset, used for facial recognition. A distance metric (norm) is used to find the closest neighbors to a given image, and the predicted class (person) is determined accordingly.
 
-## 🔍 Descriere
+## 🔍 Description
 
-- Se utilizează un set de imagini structurat în foldere `s1` până la `s40`, fiecare conținând imagini `1.pgm` până la `9.pgm`.
-- Primele 8 imagini per persoană sunt folosite pentru antrenare.
-- Se poate selecta norma dorită: `1`, `2`, `inf`, `cos`.
-- Se afișează imaginea originală și cea mai apropiată imagine găsită de algoritm.
+- Uses a set of images organized in folders `s1` to `s40`, each containing images `1.pgm` to `9.pgm`.
+- The first 8 images per person are used for training.
+- You can choose the norm: `1`, `2`, `inf`, or `cos`.
+- Displays both the input image and the closest matching image found by the algorithm.
 
-## 🧠 Algoritmul K-NN
+## 🧠 K-NN Algorithm
 
-1. Vectorizarea imaginilor și stocarea în matricea A.
-2. Calcularea distanței dintre o imagine necunoscută și toate imaginile din setul de antrenament.
-3. Sortarea după distanță și alegerea celor mai apropiați 3 vecini.
-4. Estimarea clasei prin modă statistică.
-5. Afișarea rezultatului.
+1. Vectorizes the images and stores them in matrix A.
+2. Calculates the distance between an unknown image and all training images.
+3. Sorts the distances and selects the 3 closest neighbors.
+4. Estimates the class using statistical mode.
+5. Displays the result.
 
-## ▶️ Cum rulezi
+## ▶️ How to Run
 
-1. Asigură-te că ai structura de directoare `m0Poze/s1/.../s40` cu fișiere `.pgm`.
-2. Rulează scriptul Python și introdu norma dorită când ți se cere:
+1. Make sure you have the directory structure `m0Poze/s1/.../s40` with `.pgm` files.
+2. Run the Python script and enter the desired norm when prompted:
    ```
    python script.py
    ```
 
-## 👤 Autor
+## 👤 Author
 
 **Olaru Andrei**  
 [LinkedIn](https://www.linkedin.com/in/andrei-olaru-6a471a190/)
